@@ -1,0 +1,53 @@
+<aside class="d-flex flex-column h-100 bg-dark bg-gradient p-3">
+  <!-- Title -->
+  <div
+    class="d-flex justify-content-center align-items-center app-bg-primary mb-3 w-100 rounded-1"
+  >
+    <button class="btn">
+      <span class="h4 app-text-secondary" routerLink="/dashboard">{{
+        title
+      }}</span>
+    </button>
+  </div>
+  <!--  Nav Links -->
+  <nav class="d-flex flex-column gap-2">
+    <span class="text-white small">
+      {{ "paginas" | uppercase }}
+    </span>
+    <button
+      *ngFor="let link of navLinks"
+      class="d-flex justify-content-start align-items-center text-white mx-1 rounded-1"
+      routerLinkActive="bg-white bg-opacity-10 bg-gradient"
+      mat-button
+      [routerLink]="'/' + link.route"
+    >
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        [fontIcon]="link.icon || 'dashboard'"
+      >
+      </mat-icon>
+
+      <span> {{ link.name | titlecase }} </span>
+    </button>
+    <!-- Auth Links -->
+    <span class="text-white small">
+      {{ "registro" | uppercase }}
+    </span>
+    <button
+      *ngFor="let link of authLinks"
+      mat-button
+      class="d-flex justify-content-start align-items-center mx-1 text-white rounded-1"
+      [routerLink]="'/' + link.route"
+    >
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="login"
+      >
+      </mat-icon>
+
+      <span> {{ link.name | titlecase }} </span>
+    </button>
+  </nav>
+</aside>

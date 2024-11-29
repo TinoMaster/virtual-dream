@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --primary: #00184a;
+  --secondary: #ff6600;
+  --accent: #ff4081;
+  --warn: #f44336;
+}
+
+:root .app-bg-primary {
+  background-color: var(--primary);
+}
+
+:root .app-bg-secondary {
+  background-color: var(--secondary);
+}
+
+:root .app-text-primary {
+  color: var(--primary);
+}
+
+:root .app-text-secondary {
+  color: var(--secondary);
+}

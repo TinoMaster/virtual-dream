@@ -1,0 +1,33 @@
+<mat-drawer-container class="layout-container">
+  <mat-drawer
+    class="rounded-0"
+    #drawer
+    [mode]="drawerMode"
+    [opened]="drawerOpened"
+  >
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <section class="main-section d-flex flex-column">
+    <div class="menu-section position-sticky top-0 w-100 z-1">
+      <app-header>
+        <button
+          class="btn-toggle-sidebar"
+          mat-icon-button
+          (click)="drawer.toggle()"
+        >
+          <mat-icon class="text-white text-opacity-75">menu</mat-icon>
+        </button>
+      </app-header>
+    </div>
+
+    <div class="content-section">
+      <div class="container">
+        <ng-content></ng-content>
+      </div>
+
+      <div class="mt-5">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </section>
+</mat-drawer-container>

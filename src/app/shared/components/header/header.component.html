@@ -1,0 +1,23 @@
+<header class="bg-dark bg-gradient shadow-sm">
+  <nav
+    class="navbar navbar-expand-lg bg-transparent w-100"
+    data-bs-theme="dark"
+  >
+    <div class="container-fluid header-end">
+      <!-- Menú de navegación -->
+      <div class="" id="">
+        <button mat-icon-button>
+          <mat-icon class="text-white opacity-50" aria-hidden="false">person</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon class="text-white opacity-50" aria-hidden="false">notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon class="text-white opacity-50" aria-hidden="false">settings</mat-icon>
+        </button>
+      </div>
+
+      <ng-content select=".btn-toggle-sidebar"></ng-content>
+    </div>
+  </nav>
+</header>
