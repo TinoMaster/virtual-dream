@@ -1,0 +1,15 @@
+<ng-container>
+  <div class="card shadow">
+    <div
+      [style.background]="background()"
+      [style.color]="colorText()"
+      class="card-header bg-gradient"
+    >
+      <span class="m-0 small">{{ title() }}</span>
+    </div>
+    <div class="card-body">
+      <!-- Contenido dinámico: Resumen de ventas -->
+      <ng-content></ng-content>
+    </div>
+  </div>
+</ng-container>

@@ -1,18 +1,12 @@
 import { Component } from '@angular/core';
 import { NavLinks } from '../../../core/types/global.types';
-import {
-  APPLICATION_TITLE,
-  authLinks,
-  navLinks,
-} from '../../../core/data/global.data';
-import { RouterLink } from '@angular/router';
-import { NgFor, TitleCasePipe } from '@angular/common';
+import { APPLICATION_TITLE, authLinks } from '../../../core/data/global.data';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, NgFor, TitleCasePipe, MatButtonModule, MatIconModule],
+  imports: [MatButtonModule, MatIconModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
