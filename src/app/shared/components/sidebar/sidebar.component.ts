@@ -9,6 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { ButtonChangeThemeComponent } from "../button-change-theme/button-change-theme.component";
 
 @Component({
   selector: 'app-sidebar',
@@ -20,7 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
     RouterLinkActive,
     UpperCasePipe,
     TitleCasePipe,
-  ],
+    ButtonChangeThemeComponent
+],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })

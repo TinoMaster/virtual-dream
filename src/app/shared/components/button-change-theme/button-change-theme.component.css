@@ -1,0 +1,56 @@
+.custom-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px; /* Ancho compacto */
+  height: 25px; /* Altura compacta */
+  background-color: #e0e0e0;
+  border-radius: 15px; /* Mantiene el borde redondeado */
+  padding: 0; /* Sin relleno extra */
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-toggle .icon-sun,
+.custom-toggle .icon-moon {
+  font-size: 25px;
+  color: #757575;
+  position: absolute;
+  transition: color 0.3s ease;
+}
+
+.custom-toggle .icon-sun {
+  left: 0px;
+  z-index: 0;
+  color: #d3a307;
+}
+
+.custom-toggle .icon-moon {
+  right: 0px;
+  z-index: 0;
+}
+
+.custom-toggle .icon-sun.active,
+.custom-toggle .icon-moon.active {
+  color: #ffd700; /* Sol y luna destacados */
+}
+
+.custom-toggle .toggle-switch {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1;
+}
+
+.custom-toggle .toggle-switch.active {
+  transform: translateX(34px);
+  background-color: #1e1e2f;
+}

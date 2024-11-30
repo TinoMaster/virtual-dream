@@ -1,0 +1,9 @@
+<div class="custom-toggle" (click)="toggleTheme()">
+  <mat-icon class="icon-sun" [class.active]="!isDarkThemeActive"
+    >light_mode</mat-icon
+  >
+  <div class="toggle-switch" [class.active]="isDarkThemeActive"></div>
+  <mat-icon class="icon-moon" [class.active]="isDarkThemeActive"
+    >dark_mode</mat-icon
+  >
+</div>
