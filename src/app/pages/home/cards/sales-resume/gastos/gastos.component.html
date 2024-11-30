@@ -1,0 +1,34 @@
+<div class="d-flex flex-column gap-2">
+  <button
+    mat-button
+    title="ver detalles de gastos"
+    class="d-flex justify-content-center align-items-center gap-1 small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+  >
+    <span>{{ "gastos" | uppercase }}</span>
+    <mat-icon class="">visibility</mat-icon>
+  </button>
+  <div class="d-flex justify-content-between text-secondary">
+    <span class="fw-bold">{{ "productos:" | titlecase }}</span>
+    <span class="fw-bold">{{ "300" | currency : "USD" }}</span>
+  </div>
+
+  <div class="d-flex justify-content-between text-secondary">
+    <span class="fw-bold">{{ "insumos:" | titlecase }}</span>
+    <span class="fw-bold">{{ "78" | currency : "USD" }}</span>
+  </div>
+
+  <div class="d-flex justify-content-between text-secondary">
+    <span class="fw-bold">{{ "impuestos:" | titlecase }}</span>
+    <span class="fw-bold">{{ "62" | currency : "USD" }}</span>
+  </div>
+
+  <div class="d-flex justify-content-between text-secondary">
+    <span class="fw-bold">{{ "salarios:" | titlecase }}</span>
+    <span class="fw-bold">{{ "490" | currency : "USD" }}</span>
+  </div>
+
+  <div class="d-flex justify-content-between text-secondary">
+    <span class="fw-bold">{{ "otros:" | titlecase }}</span>
+    <span class="fw-bold">{{ "50" | currency : "USD" }}</span>
+  </div>
+</div>
