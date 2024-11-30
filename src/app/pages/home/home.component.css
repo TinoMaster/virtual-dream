@@ -1,0 +1,35 @@
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card-box .card-sales {
+  grid-column: 1 / 1;
+  grid-row: 1 / 6;
+}
+
+.card-box .card-inventory {
+  grid-column: 2 /4;
+  grid-row: 1 / 1;
+}
+
+.card-box .card-employees {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+.card-box .card-reports {
+  grid-column: 2 /4;
+  grid-row: 2 / 3;
+}
+
+.card-box .card-clients {
+  grid-column: 3 / 5;
+  grid-row: 3 / 6;
+}
+
+.card-box .card-store {
+  grid-column: 2 / 2;
+  grid-row: 3 / 6;
+}
