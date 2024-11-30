@@ -1,20 +1,123 @@
-<section class="">
+<section class="d-flex flex-column justify-content-between h-100 small">
   <!-- Resumen -->
-  <div class="d-flex flex-column gap-1 mb-1">
-    <div class="d-flex justify-content-between text-secondary">
-      <span class="fw-bold fs-5">{{ "total:" | titlecase }}</span>
-      <span class="fw-bold fs-5">{{ "4000" | currency : "USD" }}</span>
+  <section class="d-flex flex-column gap-2">
+    <!-- Resumen General -->
+    <div class="d-flex flex-column gap-2 mb-1">
+      <span
+        class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+        >{{ "general" | uppercase }}</span
+      >
+      <div class="d-flex justify-content-between text-secondary fs-6">
+        <span class="fw-bold">{{ "total:" | titlecase }}</span>
+        <span class="fw-bold">{{ "4000" | currency : "USD" }}</span>
+      </div>
+
+      <div class="d-flex justify-content-between text-danger opacity-75">
+        <span class="fw-bold">{{ "gastos:" | titlecase }}</span>
+        <span class="fw-bold">{{ "1042" | currency : "USD" }}</span>
+      </div>
+
+      <div class="d-flex justify-content-between text-success opacity-75">
+        <span class="fw-bold">{{ "neto:" | titlecase }}</span>
+        <span class="fw-bold">{{ "2958" | currency : "USD" }}</span>
+      </div>
+    </div>
+    <!-- Resumen Gastos -->
+    <div class="d-flex flex-column gap-2">
+      <span
+        class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+        >{{ "gastos" | uppercase }}</span
+      >
+      <div class="d-flex justify-content-between text-secondary">
+        <span class="fw-bold">{{ "tienda:" | titlecase }}</span>
+        <span class="fw-bold">{{ "378" | currency : "USD" }}</span>
+      </div>
+
+      <div class="d-flex justify-content-between text-secondary">
+        <span class="fw-bold">{{ "impuestos:" | titlecase }}</span>
+        <span class="fw-bold">{{ "62" | currency : "USD" }}</span>
+      </div>
+
+      <div class="d-flex justify-content-between text-secondary">
+        <span class="fw-bold">{{ "salarios:" | titlecase }}</span>
+        <span class="fw-bold">{{ "490" | currency : "USD" }}</span>
+      </div>
+
+      <div class="d-flex justify-content-between text-secondary">
+        <span class="fw-bold">{{ "otros:" | titlecase }}</span>
+        <span class="fw-bold">{{ "50" | currency : "USD" }}</span>
+      </div>
+    </div>
+    <!-- Estadísticas -->
+    <div class="d-flex flex-column gap-2">
+      <span
+        class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+        >{{ "estadísticas" | uppercase }}</span
+      >
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "mejor venta:" | titlecase }}</span>
+        <div class="d-flex gap-1 align-items-center">
+          <mat-icon class="">visibility</mat-icon>
+          <span class="fw-medium">{{ "4000" | currency : "USD" }}</span>
+        </div>
+      </div>
+
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "peor venta:" | titlecase }}</span>
+        <div class="d-flex gap-1 align-items-center">
+          <mat-icon class="">visibility</mat-icon>
+          <span class="fw-medium">{{ "1290" | currency : "USD" }}</span>
+        </div>
+      </div>
     </div>
 
-    <div class="d-flex justify-content-between">
-      <span class="fw-bold text-danger">{{ "gastos:" | titlecase }}</span>
-      <span class="fw-bold text-danger">{{ "1042" | currency : "USD" }}</span>
-    </div>
+    <!-- Productos -->
+    <div class="d-flex flex-column gap-2">
+      <span
+        class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+        >{{ "productos mas vendidos" | uppercase }}</span
+      >
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "hojas:" | titlecase }}</span>
+        <span class="fw-medium">{{ "12" }}</span>
+      </div>
 
-    <div class="d-flex justify-content-between text-success">
-      <span class="fw-bold">{{ "neto:" | titlecase }}</span>
-      <span class="fw-bold">{{ "2958" | currency : "USD" }}</span>
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "cartuchos:" | titlecase }}</span>
+        <span class="fw-medium">{{ "10" }}</span>
+      </div>
+
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "papel:" | titlecase }}</span>
+        <span class="fw-medium">{{ "8" }}</span>
+      </div>
+
+      <div
+        class="d-flex justify-content-between align-items-center text-secondary"
+      >
+        <span class="fw-medium">{{ "tinta:" | titlecase }}</span>
+        <span class="fw-medium">{{ "4" }}</span>
+      </div>
     </div>
+  </section>
+
+  <!-- filter -->
+  <div class="d-flex justify-content-between align-items-center gap-1 mt-4">
+    <span class="fw-bold text-secondary small">{{
+      "este mes" | uppercase
+    }}</span>
+    <button mat-icon-button class="text-secondary">
+      <mat-icon>filter_alt</mat-icon>
+    </button>
   </div>
-  <hr />
 </section>
