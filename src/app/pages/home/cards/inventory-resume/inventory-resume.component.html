@@ -1,1 +1,90 @@
-<p>inventory-resume works!</p>
+<section class="principal-box">
+  <!-- Insumos -->
+  <div class="insumos-box d-flex flex-column gap-2">
+    <button
+      mat-button
+      title="ver detalles de insumos"
+      class="d-flex justify-content-center w-100 align-items-center gap-1 fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+    >
+      <span class="small">{{ "insumos seguidos" | uppercase }}</span>
+      <mat-icon class="">visibility</mat-icon>
+    </button>
+    <div class="d-flex flex-column gap-1">
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "hojas" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 10 | unit : "u/h" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "tinta" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 0.1 | percent }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "papel foto" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 9 | unit : "u/h" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "papel plasticar" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 17 | unit : "u/h" }}</h6>
+      </div>
+    </div>
+  </div>
+  <!-- Productos -->
+  <div class="productos-box d-flex flex-column gap-2">
+    <button
+      mat-button
+      title="ver detalles de productos"
+      class="d-flex justify-content-center w-100 align-items-center gap-1 fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+    >
+      <span class="small">{{ "productos seguidos" | uppercase }}</span>
+      <mat-icon class="">visibility</mat-icon>
+    </button>
+    <div class="d-flex flex-column gap-1">
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "fosforeras" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 10 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "h-hupman" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 14 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "memorias" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 0.5 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "cables usb" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 0.5 | unit : "~p/dia" }}</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mayor consumo -->
+  <div class="mayor-consumo-box d-flex flex-column gap-2">
+    <button
+      mat-button
+      title="ver detalles de mayor consumo"
+      class="d-flex justify-content-center w-100 align-items-center gap-1 fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+    >
+      <span class="small">{{ "p. mayor consumo" | uppercase }}</span>
+      <mat-icon class="">visibility</mat-icon>
+    </button>
+    <div class="d-flex flex-column gap-1">
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "fosforeras" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 10 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "h-hupman" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 14 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "memorias" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 0.5 | unit : "~p/dia" }}</h6>
+      </div>
+      <div class="d-flex justify-content-between text-secondary">
+        <h6 class="fw-medium small">{{ "cables usb" | titlecase }}</h6>
+        <h6 class="fw-medium small">{{ 0.5 | unit : "~p/dia" }}</h6>
+      </div>
+    </div>
+  </div>
+</section>
