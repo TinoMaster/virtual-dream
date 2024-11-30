@@ -33,3 +33,33 @@
   grid-column: 2 / 2;
   grid-row: 3 / 6;
 }
+
+@media (max-width: 768px) {
+  .card-box {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .card-box .card-sales {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .card-box .card-inventory {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+  .card-box .card-employees {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+  }
+  .card-box .card-reports {
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+  .card-box .card-clients {
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+  }
+  .card-box .card-store {
+    grid-column: 1 / 1;
+    grid-row: 6 / 6;
+  }
+}
