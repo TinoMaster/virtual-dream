@@ -1,0 +1,16 @@
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item:not(:last-child) {
+  border-bottom: 1px solid #dee2e6;
+}

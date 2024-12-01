@@ -1,12 +1,10 @@
 <div class="d-flex flex-column gap-2 mb-1">
-  <button
-    mat-button
-    title="ver detalles de ventas"
-    class="d-flex justify-content-center align-items-center gap-1 small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+  <h6
+    class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
   >
-    <span>{{ "general" | uppercase }}</span>
-    <mat-icon class="">visibility</mat-icon>
-  </button>
+    {{ "general" | uppercase }}
+  </h6>
+
   <div class="d-flex justify-content-between text-secondary fs-6">
     <span class="fw-bold">{{ "total:" | titlecase }}</span>
     <span class="fw-bold">{{ "4000" | currency : "USD" }}</span>

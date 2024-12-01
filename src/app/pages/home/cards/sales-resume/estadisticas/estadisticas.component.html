@@ -1,20 +1,17 @@
 <div class="d-flex flex-column gap-2">
-  <button
-    mat-button
-    title="ver detalles de estadísticas"
-    class="d-flex justify-content-center align-items-center gap-1 small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
+  <h6
+    class="small fw-bold text-secondary shadow-sm bg-light rounded-1 p-1 text-center"
   >
-    <span>{{ "estadísticas" | uppercase }}</span>
-    <mat-icon class="">visibility</mat-icon>
-  </button>
+    {{ "estadísticas" | uppercase }}
+  </h6>
   <div class="d-flex justify-content-between align-items-center text-secondary">
-    <span class="fw-medium">{{ "mejor venta:" | titlecase }}</span>
-    <span class="fw-medium">{{ "4000" | currency : "USD" }}</span>
+    <span class="fw-bold">{{ "mejor venta:" | titlecase }}</span>
+    <span class="fw-bold">{{ "4000" | currency : "USD" }}</span>
   </div>
 
   <div class="d-flex justify-content-between align-items-center text-secondary">
-    <span class="fw-medium">{{ "peor venta:" | titlecase }}</span>
+    <span class="fw-bold">{{ "peor venta:" | titlecase }}</span>
 
-    <span class="fw-medium">{{ "1290" | currency : "USD" }}</span>
+    <span class="fw-bold">{{ "1290" | currency : "USD" }}</span>
   </div>
 </div>

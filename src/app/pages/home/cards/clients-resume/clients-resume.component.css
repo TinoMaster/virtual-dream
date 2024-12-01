@@ -1,0 +1,17 @@
+.client-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.client-section {
+  min-width: 250px;
+  flex: 1;
+  background: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .client-card {
+    flex-direction: column;
+  }
+}
