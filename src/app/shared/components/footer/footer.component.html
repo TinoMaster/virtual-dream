@@ -1,1 +1,46 @@
-<p>footer works!</p>
+<footer class="pt-2 text-center text-md-start bg-dark bg-gradient">
+  <div class="d-grid gap-6 d-md-flex justify-content-md-around text-white-50">
+    <!-- División de Descripción -->
+    <div class="">
+      <h5 class="bold m-0">Descrizione</h5>
+      <p class="m-0">
+        {{ description }}
+      </p>
+    </div>
+
+    <!-- División de Contactos -->
+    <div class="">
+      <h5 class="bold m-0">Social</h5>
+      <ul class="d-flex flex-wrap list-unstyled">
+        <li class="d-flex gap-2 justify-content-center w-100">
+          <a
+            *ngFor="let contact of socialMediaLinks"
+            [routerLink]="contact.link"
+            class="text-decoration-none"
+          >
+            {{ contact.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h5 class="bold m-0">Contatti</h5>
+      <ul class="d-flex flex-wrap list-unstyled gap-3">
+        <li class="d-flex gap-2 justify-content-center w-100">
+          <a
+            class="text-decoration-none d-flex align-items-center"
+            href="mailto:{{ email }}"
+            ><span class="material-symbols-outlined">mail:</span> {{ email }}</a
+          >
+          <a
+            class="text-decoration-none d-flex align-items-center"
+            href="tel:{{ phone }}"
+            ><span class="material-symbols-outlined">phone:</span>
+            {{ phone }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

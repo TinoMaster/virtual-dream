@@ -1,4 +1,4 @@
-import { NavLinks } from '../types/global.types';
+import { NavLinks, SocialMediaLinks } from '../types/global.types';
 
 export const APPLICATION_TITLE = 'Sueño Virtual';
 
@@ -40,6 +40,9 @@ export const navLinks: NavLinks[] = [
   },
 ];
 
+export const footerDescription =
+  'Bienvenido a nuestra tienda virtual de sueños.';
+
 export const authLinks: NavLinks[] = [
   {
     name: 'Login',
@@ -48,5 +51,28 @@ export const authLinks: NavLinks[] = [
   {
     name: 'Register',
     route: 'register',
+  },
+];
+
+export const socialContacts: SocialMediaLinks[] = [
+  {
+    name: 'Facebook',
+    link: 'https://facebook.com',
+    iconName: 'facebook',
+  },
+  {
+    name: 'Twitter',
+    link: 'https://twitter.com',
+    iconName: 'twitter',
+  },
+  {
+    name: 'Instagram',
+    link: 'https://instagram.com',
+    iconName: 'instagram',
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://linkedin.com',
+    iconName: 'LinkedIn',
   },
 ];
