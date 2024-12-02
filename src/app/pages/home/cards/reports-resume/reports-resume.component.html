@@ -1,23 +1,25 @@
 <section
-  class="report-card d-flex flex-column small flex-lg-row gap-4 rounded shadow-sm bg-light"
+  class="report-card d-flex flex-column small flex-lg-row gap-2 rounded text-secondary shadow-sm bg-light"
 >
   <!-- Gráficos de ingresos y egresos -->
-  <div class="report-section d-flex flex-column flex-grow-1 p-2 border rounded">
+  <div
+    class="report-section d-flex flex-column small flex-grow-1 p-2 border rounded"
+  >
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
       Ingresos e Egresos
     </h6>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Ingresos Totales:</span>
+      <span class="fw-bold">Ingresos Totales:</span>
       <span class="fw-bold text-success">+$50,000</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Egresos Totales:</span>
+      <span class="fw-bold">Egresos Totales:</span>
       <span class="fw-bold text-danger">-$30,000</span>
     </div>
     <div class="d-flex justify-content-between mt-3">
-      <span class="fw-medium">Balance:</span>
+      <span class="fw-bold">Balance:</span>
       <span class="fw-bold {{ 5 > 0 ? 'text-success' : 'text-danger' }}">
         {{ "+$20,000" }}
       </span>
@@ -25,28 +27,32 @@
   </div>
 
   <!-- Proyecciones de ventas -->
-  <div class="report-section d-flex flex-column flex-grow-1 p-2 border rounded">
+  <div
+    class="report-section d-flex flex-column small flex-grow-1 p-2 border rounded"
+  >
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
       Proyecciones de Ventas
     </h6>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Promedio Mensual:</span>
+      <span class="fw-bold">Promedio Mensual:</span>
       <span class="fw-bold text-success opacity-75">+$8,000</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Proyección 6 Meses:</span>
+      <span class="fw-bold">Proyección 6 Meses:</span>
       <span class="fw-bold text-success opacity-75">+$48,000</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Proyección Anual:</span>
+      <span class="fw-bold">Proyección Anual:</span>
       <span class="fw-bold text-success opacity-75">+$96,000</span>
     </div>
   </div>
 
   <!-- Top 5 productos/servicios -->
-  <div class="report-section d-flex flex-column flex-grow-1 p-2 border rounded">
+  <div
+    class="report-section d-flex flex-column small flex-grow-1 p-2 border rounded"
+  >
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
@@ -54,45 +60,47 @@
     </h6>
     <ol class="list-unstyled">
       <li class="d-flex justify-content-between">
-        <span>Producto A</span>
+        <span class="fw-bold">Producto A</span>
         <span class="fw-bold text-success">+$15,000</span>
       </li>
       <li class="d-flex justify-content-between">
-        <span>Producto B</span>
+        <span class="fw-bold">Producto B</span>
         <span class="fw-bold text-success">+$12,000</span>
       </li>
       <li class="d-flex justify-content-between">
-        <span>Servicio C</span>
+        <span class="fw-bold">Servicio C</span>
         <span class="fw-bold text-success">+$10,000</span>
       </li>
       <li class="d-flex justify-content-between">
-        <span>Producto D</span>
+        <span class="fw-bold">Producto D</span>
         <span class="fw-bold text-success">+$8,000</span>
       </li>
     </ol>
   </div>
 
   <!-- Resumen mensual -->
-  <div class="report-section d-flex flex-column flex-grow-1 p-2 border rounded">
+  <div
+    class="report-section d-flex flex-column small flex-grow-1 p-2 border rounded"
+  >
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
       Resumen Mensual
     </h6>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Ingresos:</span>
+      <span class="fw-bold">Ingresos:</span>
       <span class="fw-bold text-success">+$50,000</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Egresos:</span>
+      <span class="fw-bold">Egresos:</span>
       <span class="fw-bold text-danger">-$30,000</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Ventas:</span>
+      <span class="fw-bold">Ventas:</span>
       <span class="fw-bold text-success opacity-75">+500 unidades</span>
     </div>
     <div class="d-flex justify-content-between">
-      <span class="fw-medium">Clientes Nuevos:</span>
+      <span class="fw-bold">Clientes Nuevos:</span>
       <span class="fw-bold text-success opacity-75">+20</span>
     </div>
   </div>

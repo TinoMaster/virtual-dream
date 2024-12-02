@@ -1,36 +1,36 @@
 <section class="principal-box">
   <!-- Empleados destacados -->
-  <div class="d-flex flex-column gap-1 align-items-start small">
+  <div class="d-flex flex-column gap-1 align-items-start fw-bold small">
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
-      Empleado Destacado
+      {{ "empleados destacados" | titlecase }}
     </h6>
-    <span class="text-muted">Juan Pérez</span>
-    <span class="fw-bold">Ingresos generados:</span>
-    <span class="text-muted">$12,340</span>
+    <span class="text-success opacity-75">Juan Pérez</span>
+    <span class="fw-bold text-secondary">Ingresos generados:</span>
+    <span class="text-success opacity-75">$12,340</span>
   </div>
 
   <!-- Turnos activos -->
 
-  <ul class="list-group list-group-flush small">
+  <ul class="list-group list-group-flush small fw-bold">
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
-      Turno de la jornada
+      {{ "turnos jornada" | titlecase }}
     </h6>
     <li
-      class="list-group-item d-flex justify-content-between align-items-center"
+      class="list-group-item d-flex justify-content-between small text-secondary align-items-center"
     >
       Ana Gómez <span class="badge bg-success">Activo</span>
     </li>
     <li
-      class="list-group-item d-flex justify-content-between align-items-center"
+      class="list-group-item d-flex justify-content-between small text-secondary align-items-center"
     >
       Pedro López <span class="badge bg-success">Activo</span>
     </li>
     <li
-      class="list-group-item d-flex justify-content-between align-items-center"
+      class="list-group-item d-flex justify-content-between small text-secondary align-items-center"
     >
       Laura García <span class="badge bg-success">Activo</span>
     </li>
@@ -41,27 +41,27 @@
     <h6
       class="w-100 fw-bold text-secondary shadow-sm small bg-light rounded-1 p-1 text-center"
     >
-      Empleados con mas horas trabajadas
+      {{ "empleados con mas horas trabajadas" | titlecase }}
     </h6>
-    <table class="table table-sm table-striped">
+    <table class="table table-sm table-striped small">
       <thead>
         <tr>
-          <th>Empleado</th>
-          <th>Horas esta semana</th>
+          <th class="text-dark">Empleado</th>
+          <th class="text-dark">Horas esta semana</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Juan Pérez</td>
-          <td>30</td>
+          <td class="text-secondary fw-bold">Juan Pérez</td>
+          <td class="text-secondary fw-bold">30</td>
         </tr>
         <tr>
-          <td>Ana Gómez</td>
-          <td>36</td>
+          <td class="text-secondary fw-bold">Ana Gómez</td>
+          <td class="text-secondary fw-bold">36</td>
         </tr>
         <tr>
-          <td>Pedro López</td>
-          <td>20</td>
+          <td class="text-secondary fw-bold">Pedro López</td>
+          <td class="text-secondary fw-bold">20</td>
         </tr>
       </tbody>
     </table>
