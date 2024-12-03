@@ -1,1 +1,69 @@
-<p>sales works!</p>
+<div class="container mt-4">
+  <!-- Contadores de órdenes -->
+  <div class="d-flex justify-content-between mb-3">
+    <div class="badge bg-success text-white p-3">
+      3 work orders<br /><small>My work orders</small>
+    </div>
+    <div class="badge bg-danger text-white p-3">
+      6 work orders<br /><small>Urgent</small>
+    </div>
+    <div class="badge bg-warning text-white p-3">
+      9 work orders<br /><small>Overdue</small>
+    </div>
+    <div class="badge bg-info text-white p-3">
+      32 statuses<br /><small>Overdue</small>
+    </div>
+    <div class="ms-auto text-end">
+      <h5>Receivables</h5>
+      <p class="fs-4">$ 2,109.75</p>
+    </div>
+  </div>
+
+  <!-- Tabla y filtros -->
+  <mat-card>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <button mat-raised-button color="primary">+ Order</button>
+      <div>
+        <button mat-stroked-button>Filter</button>
+        <button mat-stroked-button>In Work (Area)</button>
+        <button mat-stroked-button>Delivery (Area)</button>
+      </div>
+    </div>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+      <!-- Columnas -->
+      <ng-container matColumnDef="order">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Order #</th>
+        <td mat-cell *matCellDef="let element">{{ element.order }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="dueDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Due Date</th>
+        <td mat-cell *matCellDef="let element">{{ element.dueDate | date }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+        <td mat-cell *matCellDef="let element">
+          <span [class]="getStatusClass(element.status)">{{
+            element.status
+          }}</span>
+        </td>
+      </ng-container>
+
+      <!-- Más columnas -->
+      <ng-container matColumnDef="client">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Client</th>
+        <td mat-cell *matCellDef="let element">{{ element.client }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="group">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Group</th>
+        <td mat-cell *matCellDef="let element">{{ element.group }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </mat-card>
+</div>

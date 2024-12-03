@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+
+.badge {
+  font-size: 0.9rem;
+}
+
+.mat-card {
+  padding: 1rem;
+  border-radius: 8px;
+}
