@@ -1,52 +1,51 @@
 import { Routes } from '@angular/router';
 
+export const AppRoutes = {
+  public: {
+    register: 'register',
+    login: 'login',
+    home: 'home',
+  },
+  private: {
+    root: 'private',
+    dashboard: 'dashboard',
+    sales: 'sales',
+    inventory: 'inventory',
+    employees: 'employees',
+    clients: 'clients',
+    store: 'store',
+    reports: 'reports',
+  },
+};
+
 export const routes: Routes = [
   {
-    path: 'home',
+    path: AppRoutes.public.home,
     loadComponent: () =>
-      import('./pages/home/home.component').then((m) => m.HomeComponent),
+      import('./pages/public/home/home.component').then((m) => m.HomeComponent),
   },
   {
-    path: 'sales',
+    path: AppRoutes.public.register,
     loadComponent: () =>
-      import('./pages/sales/sales.component').then((m) => m.SalesComponent),
-  },
-  {
-    path: 'inventory',
-    loadComponent: () =>
-      import('./pages/inventory/inventory.component').then(
-        (m) => m.InventoryComponent
+      import('./pages/public/register/register.component').then(
+        (m) => m.RegisterComponent
       ),
   },
   {
-    path: 'employees',
+    path: AppRoutes.public.login,
     loadComponent: () =>
-      import('./pages/employees/employees.component').then(
-        (m) => m.EmployeesComponent
+      import('./pages/public/login/login.component').then(
+        (m) => m.LoginComponent
       ),
   },
   {
-    path: 'clients',
-    loadComponent: () =>
-      import('./pages/clients/clients.component').then(
-        (m) => m.ClientsComponent
-      ),
-  },
-  {
-    path: 'store',
-    loadComponent: () =>
-      import('./pages/store/store.component').then((m) => m.StoreComponent),
-  },
-  {
-    path: 'reports',
-    loadComponent: () =>
-      import('./pages/reports/reports.component').then(
-        (m) => m.ReportsComponent
-      ),
+    path: AppRoutes.private.root,
+    loadChildren: () =>
+      import('./pages/privates/private.routes').then((m) => m.privateRoutes),
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: AppRoutes.public.home,
     pathMatch: 'full',
   },
   {

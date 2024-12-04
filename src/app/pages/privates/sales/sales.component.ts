@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-import { TableComponent } from '../../shared/components/table/table.component';
-import { OptionForPrincipalTableComponent } from '../../shared/components/option-for-principal-table/option-for-principal-table.component';
+import { OptionForPrincipalTableComponent } from '@app/shared/components/option-for-principal-table/option-for-principal-table.component';
+import { TableComponent } from '@app/shared/components/table/table.component';
 
 @Component({
   selector: 'app-sales',

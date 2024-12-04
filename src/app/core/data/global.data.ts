@@ -1,3 +1,4 @@
+import { AppRoutes } from '@app/app.routes';
 import { NavLinks, SocialMediaLinks } from '../types/global.types';
 
 export const APPLICATION_TITLE = 'Sueño Virtual';
@@ -5,37 +6,37 @@ export const APPLICATION_TITLE = 'Sueño Virtual';
 export const navLinks: NavLinks[] = [
   {
     name: 'inicio',
-    route: 'home',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.dashboard}`,
     icon: 'dashboard',
   },
   {
     name: 'ventas',
-    route: 'sales',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.sales}`,
     icon: 'paid',
   },
   {
     name: 'inventario',
-    route: 'inventory',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.inventory}`,
     icon: 'inventory',
   },
   {
     name: 'empleados',
-    route: 'employees',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.employees}`,
     icon: 'engineering',
   },
   {
     name: 'clientes',
-    route: 'clients',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.clients}`,
     icon: 'groups',
   },
   {
     name: 'tienda',
-    route: 'store',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.store}`,
     icon: 'store',
   },
   {
     name: 'reportes',
-    route: 'reports',
+    route: `${AppRoutes.private.root}/${AppRoutes.private.reports}`,
     icon: 'assessment',
   },
 ];
