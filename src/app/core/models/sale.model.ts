@@ -8,6 +8,7 @@ export interface SaleModel {
   total: number;
   paid: number;
   debt: number;
+  businessId: number;
   paymentMethod: 'efectivo' | 'tarjeta';
   details: DetailSaleModel[];
   date: Date;

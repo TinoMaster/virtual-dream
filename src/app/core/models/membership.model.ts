@@ -5,6 +5,7 @@ export interface MembershipModel {
   price: number;
   createdAt: Date;
   updatedAt: Date;
+  businessId: number;
   startAt: Date;
   endAt: Date;
 }

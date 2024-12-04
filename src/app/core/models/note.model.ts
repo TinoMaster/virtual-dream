@@ -6,6 +6,7 @@ export interface NoteModel {
   createdBy: number;
   updatedBy: number;
   clientId: number;
+  businessId: number;
   createdAt: Date;
   updatedAt: Date;
 }

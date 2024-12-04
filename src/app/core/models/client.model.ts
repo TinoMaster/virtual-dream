@@ -7,6 +7,7 @@ export interface ClientModel {
   phone: string;
   address: string;
   membership: MembershipModel | null;
+  businessId: number;
   createdAt: Date;
   updatedAt: Date;
 }

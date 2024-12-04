@@ -3,6 +3,7 @@ export interface ServiceModel {
   name: string;
   description: string;
   price: number;
+  businessId: number;
   createdAt: Date;
   updatedAt: Date;
 }

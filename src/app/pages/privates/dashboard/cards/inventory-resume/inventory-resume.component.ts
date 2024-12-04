@@ -2,7 +2,7 @@ import { PercentPipe, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { UnitPipe } from '@app/shared/pipes/unit.pipe';
+import { UnitPipe } from '@app/core/pipes/unit.pipe';
 
 @Component({
   selector: 'app-inventory-resume',

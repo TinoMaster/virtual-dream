@@ -4,6 +4,7 @@ export interface TaskModel {
   description: string;
   status: 'pending' | 'in-progress' | 'completed';
   assignedTo: number;
+  businessId: number;
   createdAt: Date;
   updatedAt: Date;
 }

@@ -7,6 +7,7 @@ export interface ProductModel {
   price: number;
   stock: number;
   category: ProductCategoryModel;
+  businessId: number;
   createdAt: Date;
   updatedAt: Date;
 }
