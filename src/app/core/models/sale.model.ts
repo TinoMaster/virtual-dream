@@ -1,5 +1,10 @@
 import { DetailSaleModel } from './detailSale.model';
 
+export enum PaymentMethodTypes {
+  EFECTIVO = 'efectivo',
+  TARJETA = 'tarjeta',
+}
+
 export interface SaleModel {
   id: number;
   clientId: number;
@@ -9,7 +14,7 @@ export interface SaleModel {
   paid: number;
   debt: number;
   businessId: number;
-  paymentMethod: 'efectivo' | 'tarjeta';
+  paymentMethod: PaymentMethodTypes;
   details: DetailSaleModel[];
   date: Date;
 }

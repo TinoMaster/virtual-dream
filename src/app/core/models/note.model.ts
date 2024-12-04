@@ -1,8 +1,13 @@
+export enum NoteStatus {
+  PENDING = 'pending',
+  COMPLETED = 'completed',
+}
+
 export interface NoteModel {
   id: number;
   title: string;
   description: string;
-  status: 'pending' | 'completed';
+  status: NoteStatus;
   createdBy: number;
   updatedBy: number;
   clientId: number;

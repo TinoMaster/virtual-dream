@@ -1,5 +1,12 @@
+export enum Role {
+  ADMIN = 'admin',
+  USER = 'user',
+  OWNER = 'owner',
+  EMPLOYEE = 'employee',
+}
+
 export interface RoleModel {
   id: number;
-  name: 'admin' | 'user' | 'owner' | 'employee';
+  name: Role;
   description: string;
 }
