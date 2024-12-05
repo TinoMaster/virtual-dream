@@ -7,7 +7,12 @@ import {
   withEventReplay,
 } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withFetch,
+  withInterceptors,
+} from '@angular/common/http';
+import { authInterceptor } from './core/interceptors/auth.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,8 +20,9 @@ export const appConfig: ApplicationConfig = {
     /* La introducción de withComponentInputBinding nos permite usar el @Input para obtener los parámetros de la URL */
     provideRouter(routes, withComponentInputBinding()),
     provideClientHydration(withEventReplay()),
-    /* La introducción de withFetch nos permite usar el fetch en el HttpClient */
-    provideHttpClient(withFetch()),
+    /* La introducción de withFetch nos permite usar el fetch en el HttpClient, 
+    en cambio withInterceptors nos permite usar interceptors en el HttpClient */
+    provideHttpClient(withFetch(), withInterceptors([authInterceptor])),
     provideAnimationsAsync(),
   ],
 };

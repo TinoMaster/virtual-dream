@@ -1,0 +1,14 @@
+<div>
+  <label for="{{ label() }}" class="form-label text-muted">{{ label() }}</label>
+  <input
+    type="text"
+    class="form-control"
+    id="{{ label() }}"
+    [type]="type()"
+    placeholder="{{ placeholder() }}"
+    [formControl]="$any(control())"
+  />
+  @if (control() && control()!.touched && control()!.invalid) {
+  <small class="text-danger ms-2">{{ errorMessage() }}</small>
+  }
+</div>
