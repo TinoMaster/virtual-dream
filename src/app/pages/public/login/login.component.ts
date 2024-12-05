@@ -5,7 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { CustomInputComponent } from '@app/shared/components';
+import { CustomInputComponent } from '@app/shared/components/common';
 import { AuthService } from '@core/services';
 
 interface LoginForm {

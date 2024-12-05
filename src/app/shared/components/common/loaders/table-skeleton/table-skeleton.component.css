@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
+  gap: 2px;
   overflow: hidden;
 }
 
@@ -25,6 +26,10 @@
 }
 
 @keyframes skeleton-loading {
-  0% { background-color: hsl(199, 17%, 82%); }
-  100% { background-color: hsl(200, 20%, 95%); }
+  0% {
+    background-color: hsl(199, 17%, 82%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }

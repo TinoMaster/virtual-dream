@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { SidebarComponent } from '../sidebar/sidebar.component';
-import { HeaderComponent } from '../header/header.component';
 import { MatIconModule } from '@angular/material/icon';
-import { FooterComponent } from '../footer/footer.component';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent, SidebarComponent } from '@shared/components/private';
 
 @Component({
   selector: 'app-layout',
@@ -15,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
     HeaderComponent,
     MatIconModule,
     MatButtonModule,
-    FooterComponent,
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css',

@@ -54,7 +54,7 @@ export const routes: Routes = [
     path: '**',
     loadComponent: () =>
       import(
-        './shared/components/page-not-found/page-not-found.component'
+        './shared/components/common/page-not-found/page-not-found.component'
       ).then((m) => m.PageNotFoundComponent),
   },
 ];

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { NavLinks } from '../../../core/types/global.types';
-import { APPLICATION_TITLE, authLinks } from '../../../core/data/global.data';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { APPLICATION_TITLE, authLinks } from '@core/data';
+import { NavLinks } from '@app/core/types';
 
 @Component({
   selector: 'app-header',

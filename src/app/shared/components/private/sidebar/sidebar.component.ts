@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { NavLinks } from '../../../core/types/global.types';
-import {
-  APPLICATION_TITLE,
-  authLinks,
-  navLinks,
-} from '../../../core/data/global.data';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgFor, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { ButtonChangeThemeComponent } from "../button-change-theme/button-change-theme.component";
+import { ButtonChangeThemeComponent } from '@app/shared/components/common';
+import {
+  APPLICATION_TITLE,
+  authLinks,
+  navLinks,
+} from '@app/core/data/global.data';
+import { NavLinks } from '@app/core/types';
 
 @Component({
   selector: 'app-sidebar',
@@ -21,8 +21,8 @@ import { ButtonChangeThemeComponent } from "../button-change-theme/button-change
     RouterLinkActive,
     UpperCasePipe,
     TitleCasePipe,
-    ButtonChangeThemeComponent
-],
+    ButtonChangeThemeComponent,
+  ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
 })
