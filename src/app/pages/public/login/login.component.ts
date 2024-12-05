@@ -5,6 +5,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { CustomInputComponent } from '@app/shared/components/common';
 import { AuthService } from '@core/services';
 
@@ -15,7 +16,7 @@ interface LoginForm {
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule, CustomInputComponent],
+  imports: [ReactiveFormsModule, CustomInputComponent, RouterLink],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })

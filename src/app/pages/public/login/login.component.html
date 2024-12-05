@@ -1,8 +1,10 @@
-<div class="d-flex flex-column align-items-center min-vh-100 bg-light">
+<div
+  class="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-dark bg-gradient"
+>
   <div class="position-relative w-100" style="max-width: 400px">
     <!-- Contenedor principal -->
-    <div class="bg-white rounded-3 shadow p-4">
-      <h2 class="text-center text-secondary mb-4">Login</h2>
+    <div class="rounded-3 shadow p-4 bg-white">
+      <h2 class="text-center text-secondary mb-4">Iniciar sesión</h2>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <!-- Email -->
         <div class="mb-3">
@@ -41,7 +43,7 @@
             class="btn btn-primary w-100 py-2 rounded-3 shadow"
             [disabled]="loginForm.invalid"
           >
-            Login
+            Iniciar sesión
           </button>
         </div>
         <!-- Separador -->
@@ -62,7 +64,9 @@
         <!-- Crear cuenta -->
         <div class="text-center mt-4">
           <span>¿Eres nuevo?</span>
-          <a href="#" class="text-decoration-none text-primary"
+          <a
+            [routerLink]="['/register']"
+            class="text-decoration-none text-primary"
             >Crea una cuenta</a
           >
         </div>
