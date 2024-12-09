@@ -1,8 +1,9 @@
 export enum Role {
-  ADMIN = 'admin',
-  USER = 'user',
-  OWNER = 'owner',
-  EMPLOYEE = 'employee',
+  ADMIN = 'ADMIN',
+  USER = 'USER',
+  OWNER = 'OWNER',
+  EMPLOYEE = 'EMPLOYEE',
+  SUPERADMIN = 'SUPERADMIN',
 }
 
 export interface RoleModel {

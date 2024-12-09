@@ -3,7 +3,7 @@ export interface BusinessModel {
   name: string;
   description: string;
   address: string;
-  phone?: string;
+  phone: string;
   email: string;
   createdAt?: Date;
   updatedAt?: Date;

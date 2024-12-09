@@ -4,10 +4,10 @@ export interface UserModel {
   id: number;
   name: string;
   email: string;
-  password: string;
+  password?: string;
   role: RoleModel;
   active: boolean;
-  businessId: number;
+  businesses: number[];
   createdAt: Date;
   updatedAt: Date;
 }
